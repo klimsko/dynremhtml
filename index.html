@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>DynRem tests - main page</title>
-
+<!--
 	<!-- Google Tag Manager -->
 	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -11,14 +11,32 @@
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-PRNN7HS');</script>
 	<!-- End Google Tag Manager -->
-	
+-->	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129282058-1"></script>
+	<script>
+ 	 window.dataLayer = window.dataLayer || [];
+ 	 function gtag(){dataLayer.push(arguments);}
+	 gtag('js', new Date());
+
+  	 gtag('config', 'UA-129282058-1', {
+  		'custom_map': {'dimension2': 'dynx_pagetype'}
+	 });
+	</script>
 </head>
 <body>
+	// Sends an event that passes 'dynx_pagetype' as a parameter.
+	gtag('event', 'dynx_pagetype_dimension', {
+		'dynx_pagetype': 'homepage',
+		'dynx_itemid': 777,
+		'dynx_totalvalue': 1
+	});
+<!--
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PRNN7HS"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-
+-->
 	<h1>The main page</h1>
 	<menu>
 		<ul>
