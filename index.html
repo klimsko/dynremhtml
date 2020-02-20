@@ -21,10 +21,13 @@
  	 function gtag(){dataLayer.push(arguments);}
 	 gtag('js', new Date());
 
-  	 gtag('config', 'UA-129282058-1', {
-  		'custom_map': {'dimension2': 'dynx_pagetype'}
-	 });
+  	 gtag('config', 'UA-129282058-1');
 	</script>
+	<!--
+		, {
+  		'custom_map': {'dimension2': 'dynx_pagetype'}
+	 	}
+	-->
 </head>
 <body>
 	<!-- // Sends an event that passes 'dynx_pagetype' as a parameter. -->
@@ -32,7 +35,8 @@
 		gtag('event', 'dynx_pagetype_dimension', {
 			'dynx_pagetype': 'homepage',
 			'dynx_itemid': 777,
-			'dynx_totalvalue': 1
+			'dynx_totalvalue': 1,
+			'non_interaction': true
 		});
 	</script>
 
