@@ -21,12 +21,15 @@
  	 function gtag(){dataLayer.push(arguments);}
 	 gtag('js', new Date());
 
-  	 gtag('config', 'UA-129282058-1');
+  	 gtag('config', 'UA-129282058-1', {
+  		'custom_map': {
+			'dimension1': 'dynx_itemid',
+			'dimension2': 'dynx_pagetype',
+			'dimension3': 'dynx_totalvalue'
+		}});
 	</script>
 	<!--
-		, {
-  		'custom_map': {'dimension2': 'dynx_pagetype'}
-	 	}
+		
 	-->
 </head>
 <body>
